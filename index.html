@@ -836,5 +836,6 @@ document.addEventListener('DOMContentLoaded',()=>{render();const bar=document.ge
 const seen=new Map();const io=new IntersectionObserver(es=>{es.forEach(x=>seen.set(x.target,x.isIntersecting));const show=![...seen.values()].some(Boolean);bar.classList.toggle('show',show);bar.inert=!show;});
 ['.hero','.cta-section','.site-footer'].forEach(q=>{const el=document.querySelector(q);if(el){seen.set(el,true);io.observe(el);}});});})();
 </script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2d663564f9904149ad288e037a0ce07c"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
