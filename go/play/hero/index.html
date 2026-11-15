@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#251A65" />
+  <title>LADNIK</title>
+  <link rel="canonical" href="https://ladnik.app/" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <!-- Counts this button press as a cookie-free page view, then continues. -->
+  <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2d663564f9904149ad288e037a0ce07c"}'></script>
+  <style>
+    body{margin:0;min-height:100vh;display:grid;place-items:center;background:#F6F5F9;color:#251A65;font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;text-align:center;padding:0 16px}
+    a{color:#EF5F18;font-weight:600}
+    @media (prefers-color-scheme:dark){body{background:#110D24;color:#EEEAF8}a{color:#FF7A3A}}
+  </style>
+</head>
+<body>
+  <p>Opening Google Play…<br /><a id="go" href="https://play.google.com/store/apps/details?id=com.vladshpilevsky.ladnik&amp;utm_source=ladnik.app&amp;utm_medium=website&amp;utm_campaign=hero" rel="noopener">Open LADNIK in Google Play</a></p>
+  <script>
+    // Leave once the beacon has loaded (it reports on load and on pagehide),
+    // or after 2.5 s on a slow network: the visitor is never kept waiting long.
+    (function () {
+      var url = document.getElementById('go').href, started = Date.now(), gone = false;
+      function go() { if (!gone) { gone = true; location.replace(url); } }
+      var b = document.querySelector('script[data-cf-beacon]');
+      if (b) b.addEventListener('load', function () { setTimeout(go, Math.max(0, 400 - (Date.now() - started))); });
+      setTimeout(go, 2500);
+    })();
+  </script>
+  <noscript><meta http-equiv="refresh" content="0;url=https://play.google.com/store/apps/details?id=com.vladshpilevsky.ladnik&amp;utm_source=ladnik.app&amp;utm_medium=website&amp;utm_campaign=hero" /></noscript>
+</body>
+</html>
